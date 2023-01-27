@@ -11,7 +11,7 @@ export default function Home() {
   const [memory, setMemory] = useState(0);
 
   const allocate = () => {
-    data += generateRandomString(10);
+    data += generateRandomString(5);
 
     setTotal(data.length / 1000000);
   };
@@ -45,7 +45,7 @@ export default function Home() {
           onClick={allocate}
           className="px-3 py-2 border border-gray-200 rounded-lg text-gray-600 font-medium  bg-gray-50"
         >
-          Allocate 100mb
+          Allocate 5mb
         </button>
       </main>
     </>
